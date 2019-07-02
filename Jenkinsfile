@@ -28,7 +28,7 @@ pipeline {
 								       echo "Running the unit Tets.."
 								   }
 						     }
-							 stage (Integration Tests) {
+							 stage ('Integration Tests') {
 							     agent { // This docker agent will execute the ‘Integration test’ stage
 								    docker {
 									   reuseNode true
